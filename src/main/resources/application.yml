@@ -1,0 +1,31 @@
+logging:
+  level:
+    root: WARN
+    ru.mockingrave.ethereum.javabackend: INFO
+
+spring.application.name: 'my_ethereum'
+server.port: 8090
+
+spring:
+  elasticsearch:
+    uris: 'http://localhost:9200'
+  mvc.pathmatch.matching-strategy: ant_path_matcher
+
+ipfs:
+  host: 'localhost'
+  port: 5001
+
+geth:
+  web3j.client-address: '\\\\.\\pipe\\geth.ipc'
+
+  keystore.path: 'M:\\Dev\\Projects\\ProjectEthereum\\geth_1.10.1_alltools-win-64\\test-chain-dir\\keystore\\'
+  contract.certifier: '0x7cfe01c868cba3a64f609137682484b23999b951'
+  account.viewing:
+    address: '0x8112eb3734f4f47139ff1aea447002de4fdbfcfa'
+    wallet: 'UTC--2021-05-15T13-58-03.611229800Z--8112eb3734f4f47139ff1aea447002de4fdbfcfa.json'
+  contract.accreditor: '0x9aad98b5531ea57fa9ab44f03664de22d00935b1'
+  contract.accreditor.owner:
+    address: '0x934d08cbc434c1fc520ace848118f539f1007491'
+    ipfs: 'QmVSV41AxszeUQVF4gzFq2GV26sHKGZ6PBkKcH1hwyGr3a'
+  account.viewing.password: 'password'
+
